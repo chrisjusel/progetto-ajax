@@ -1,0 +1,13 @@
+header img{
+    width: 30%;
+}
+
+h2{
+    border-bottom: 2px solid black;
+    width: 100%;
+}
+
+p{
+    word-wrap: break-word;
+}
+
