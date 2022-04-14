@@ -29,9 +29,11 @@ function populateUltimeNotizie(container){
             let formattedData = new Intl.DateTimeFormat('it-IT', { dateStyle: 'full', timeStyle: 'short' }).format(data);
 
             let notizia = document.createElement('div');
+            notizia.className = 'notizia';
+            notizia.setAttribute('onclick', "javascript:location.href='"+notizie[i].url+"'")
             notizia.innerHTML =         
             `
-            <div class="d-flex justify-content-between notizia">
+            <div class="d-flex justify-content-between">
                 <h6>${formattedData}</h6>
                 <h6>Categoria: ${notizie[i].category}</h6>
             </div>
